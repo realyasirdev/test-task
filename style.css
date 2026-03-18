@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 50px;
+}
+
+h1 {
+    font-size: 5.5rem; 
+    font-weight: 700;
+    color: #000;
+}
+
+#text-container {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    color: #000;
+    width: 100%;
+    max-width: 900px;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    user-select: none;
+}
+
+#text-container span {
+    transition: color 0.1s;
+}
+
+#text-container span.correct {
+    color: #388e3c; /* Dark Green */
+}
+
+#text-container span.incorrect {
+    color: #d32f2f;
+    background-color: #ffcdd2;
+}
+
+#text-container span.active {
+    border-bottom: 2px solid #000;
+}
+
+#timer {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #000;
+}
+
+#final-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.times-up-msg {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #000;
+}
+
+.wpm-score {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #000;
+}
+
+button#try-again {
+    padding: 15px 40px;
+    font-size: 1.3rem;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 8px; /* Slightly square rounded */
+    cursor: pointer;
+    font-weight: 400;
+    margin-top: 10px;
+    font-family: Arial, sans-serif; /* Fallback for general button text font like screen */
+}
+
+button#try-again:hover {
+    background-color: #444;
+}
+
+.hidden {
+    display: none !important;
+}
